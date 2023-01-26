@@ -1,0 +1,17 @@
+{
+  "name": "search-applications",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "npx esbuild index.js --bundle --platform=node --target=node10.4 --outfile=out.cjs && node out.cjs; rm out.cjs"
+  },
+  "dependencies": {
+    "@canonical/jujulib": "^3.0.3",
+    "esbuild": "^0.17.4",
+    "fuse.js": "^6.6.2",
+    "inquirer": "^9.1.4",
+    "inquirer-search-list": "^1.2.6",
+    "ws": "^8.12.0"
+  }
+}
